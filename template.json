@@ -1,0 +1,197 @@
+{
+  "Actor": {
+    "types": ["entity", "monster"],
+    "templates": {
+      "resources": {
+        "hitpoints": {
+          "value": 24,
+          "min": 0,
+          "max": 24
+        },
+        "hitdie": {
+          "value": 4,
+          "size": 6,
+          "min": 0,
+          "max": 4
+        },
+        "actions": {
+          "value": 2,
+          "min": 0,
+          "max": 2
+        },
+        "reactions": {
+          "value": 2,
+          "min": 0,
+          "max": 2
+        }
+      },
+      "core": {
+        "vulnerabilities": [],
+        "resistances": [],
+        "weaponsize": 6,
+        "speed": {
+            "mod": 20,
+            "bonus": 0
+        },
+        "critrange": {
+            "mod": 20,
+            "bonus": 0
+        },
+        "ac": {
+            "mod": 10,
+            "bonus": 0
+        },
+        "bc": {
+            "mod": 10,
+            "bonus": 0
+        },
+        "wc": {
+            "mod": 10,
+            "bonus": 0
+        },
+        "guardbonus": {
+            "mod": 2,
+            "bonus": 0
+        },
+        "parrybonus": {
+            "mod": 2,
+            "bonus": 0
+        },
+        "attackbonus": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "initiative": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "sneakattack": null
+      },
+      "stats": {
+        "brain": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "brawn": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "grit": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "guile": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "weird": {
+            "mod": 0,
+            "bonus": 0
+        }
+      },
+      "skills": {
+        "athletics": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "charisma": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "chicanery": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "investigation": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "lore": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "nature": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "perception": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "stealth": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "survival": {
+            "mod": 0,
+            "bonus": 0
+        },
+        "talent": {
+            "mod": 0,
+            "bonus": 0
+        }
+      }
+    },
+    "entity": {
+      "templates": ["resources", "core", "stats", "skills"],
+      "biography": "",
+      "attributes": {
+        "level": {
+          "value": 1
+        }
+      }
+    }
+  },
+  "Item": {
+    "types": ["item", "boon", "forfeit", "spell", "gadget", "action", "weapon"],
+    "templates": {
+      "base": {
+        "description": ""
+      },
+      "components": {
+        "component_dice": []
+      },
+      "damage": {
+        "type": null,
+        "die": null
+      },
+      "modifier": {
+        "value": 0,
+        "attribute": "none"
+      },
+      "level": {
+        "level": 0
+      },
+      "size": {
+        "slot": "slow",
+        "size": 0,
+        "packs": false
+      },
+      "tier": {
+        "tier": 0
+      }
+    },
+    "item": {
+      "templates": ["base", "size"],
+      "quantity": 1
+    },
+    "boon": {
+      "templates": ["base", "teir"]
+    },
+    "forfeit": {
+      "templates": ["base", "teir"]
+    },
+    "spell": {
+      "templates": ["base", "level", "components", "modifier", "damage"]
+    },
+    "gadget": {
+      "templates": ["base", "level", "components", "modifier", "damage"]
+    },
+    "action": {
+      "templates": ["base", "modifier"]
+    },
+    "weapon": {
+      "templates": ["base", "modifier", "size", "damage"]
+    }
+  }
+}
