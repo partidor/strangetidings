@@ -5,4 +5,10 @@ export default class StrangeTidingsEntitySheet extends ActorSheet {
             classes: ["strangetidings", "sheet", "entity"]
         });
     }
+
+    getData() {
+        const data = super.getData();
+        data.config = CONFIG.strangetidings;
+        return data;
+    }
 }

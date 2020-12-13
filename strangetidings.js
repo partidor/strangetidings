@@ -22,10 +22,10 @@ Hooks.once("init", function(){
     CONFIG.strangetidings = strangetidings;
 
     Items.unregisterSheet("core", ItemSheet);
-    Items.registerSheet("strangetidings-item-sheet", StrangeTidingsItemSheet, { makeDefault: true });
+    Items.registerSheet("strangetidings", StrangeTidingsItemSheet, { makeDefault: true });
 
     Actors.unregisterSheet("core", ActorSheet);
-    Actors.registerSheet("strangetidings-actor-sheet", StrangeTidingsEntitySheet, { makeDefault: true });
+    Actors.registerSheet("strangetidings", StrangeTidingsEntitySheet, { makeDefault: true });
     
     preloadHandlebarsTemplates();
 });
