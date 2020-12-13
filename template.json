@@ -1,6 +1,6 @@
 {
   "Actor": {
-    "types": ["entity", "monster"],
+    "types": ["entity", "plainentity"],
     "templates": {
       "resources": {
         "hitpoints": {
@@ -65,7 +65,10 @@
             "mod": 0,
             "bonus": 0
         },
-        "sneakattack": null
+        "sneakattack": null,
+        "race": "none",
+        "class": "none",
+        "job": "none"
       },
       "stats": {
         "brain": {
@@ -130,9 +133,26 @@
             "mod": 0,
             "bonus": 0
         }
+      },
+      "languages": {
+        "hundred": "Common",
+        "hundredtwo": "",
+        "eighty": "",
+        "sixty": "",
+        "fourty": "",
+        "twenty": ""
       }
     },
     "entity": {
+      "templates": ["resources", "core", "stats", "skills", "languages"],
+      "biography": "",
+      "attributes": {
+        "level": {
+          "value": 1
+        }
+      }
+    },
+    "plainentity": {
       "templates": ["resources", "core", "stats", "skills"],
       "biography": "",
       "attributes": {
@@ -153,12 +173,13 @@
       },
       "damage": {
         "core": "attackbonus",
-        "type": "slashing",
-        "die": 0
+        "primarytype": "slashing",
+        "secondarytype": "piercing",
+        "die": "1d4"
       },
       "modifier": {
         "core": "attackbonus",
-        "die": 0
+        "die": "1d4"
       },
       "level": {
         "level": 0

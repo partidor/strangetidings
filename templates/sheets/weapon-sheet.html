@@ -10,7 +10,8 @@
                 <th>{{localize "stlang.item.weapon.attackbonus"}}</th>
                 <th>{{localize "stlang.item.weapon.damageroll"}}</th>
                 <th>{{localize "stlang.item.weapon.damagebonus"}}</th>
-                <th>{{localize "stlang.item.weapon.damagetype"}}</th>
+                <th>{{localize "stlang.item.weapon.primarydamagetype"}}</th>
+                <th>{{localize "stlang.item.weapon.secondarydamagetype"}}</th>
                 <th>{{localize "stlang.item.weapon.range"}}</th>
                 <th>{{localize "stlang.item.weapon.customization"}}</th>
                 <th>{{localize "stlang.item.weapon.material"}}</th>
@@ -42,8 +43,17 @@
                     </select>
                 </td>
                 <td>
-                    <select name="data.damage.type">
-                        {{#select data.damage.type}}
+                    <select name="data.damage.primarytype">
+                        {{#select data.damage.primarytype}}
+                        {{#each config.damageTypes as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td>
+                    <select name="data.damage.secondarytype">
+                        {{#select data.damage.secondarytype}}
                         {{#each config.damageTypes as |name type|}}
                         <option value="{{type}}">{{localize name}}</option>
                         {{/each}}

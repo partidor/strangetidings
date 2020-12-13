@@ -1,0 +1,75 @@
+<section>
+	<div class="title-and-box"> 
+		<h1>{{localize "stlang.entity.name"}}</h1>
+		<div class="box">
+			{{actor.name}}
+		</div>
+	</div>
+	<div class="title-and-box"> 
+		<h1>{{localize "stlang.entity.race"}}</h1>
+		<div class="box">
+            <input name="data.core.race" type="text" value="{{data.core.race}}"/>
+		</div>
+	</div>
+	<div class="title-and-box"> 
+		<h1>{{localize "stlang.entity.job"}}</h1>
+		<div class="box">
+            <input name="data.core.job" type="text" value="{{data.core.job}}"/>
+		</div>
+	</div>
+	<div class="title-and-box"> 
+		<h1>{{localize "stlang.entity.class"}}</h1>
+		<div class="box">
+            <input name="data.core.class" type="text" value="{{data.core.class}}"/>
+		</div>
+	</div>
+    <div class="avatar">
+        <img src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64"/>
+    </div>
+    <div class="languages">
+    <table>
+        <tr>
+            <td>
+                100%
+            </td>
+            <td>
+                <input name="data.languages.hundred" type="text" value="{{data.languages.hundred}}"/>
+            </td>
+            <td>
+                60%
+            </td>
+            <td>
+                <input name="data.languages.sxity" type="text" value="{{data.languages.sixty}}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                100%
+            </td>
+            <td>
+                <input name="data.languages.hundredtwo" type="text" value="{{data.languages.hundredtwo}}"/>
+            </td>
+            <td>
+                40%
+            </td>
+            <td>
+                <input name="data.languages.fourty" type="text" value="{{data.languages.fourty}}"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                80%
+            </td>
+            <td>
+                <input name="data.languages.eighty" type="text" value="{{data.languages.eighty}}"/>
+            </td>
+            <td>
+                20%
+            </td>
+            <td>
+                <input name="data.languages.twenty" type="text" value="{{data.languages.twenty}}"/>
+            </td>
+        </tr>
+    </table>
+    </div>
+</section>

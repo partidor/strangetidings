@@ -23,7 +23,8 @@
                 "attackbonus": "Attack Bonus",
                 "damageroll": "Damage Roll",
                 "damagebonus": "Damage Bonus",
-                "damagetype": "Damage Type",
+                "primarydamagetype": "Primary Damage Type",
+                "secondarydamagetype": "Secondary Damage Type",
                 "range": "Range",
                 "customization": "Customization",
                 "material": "Material",
@@ -63,7 +64,24 @@
                 "great": "Great"
             }
         },
-        "actor": {
+        "entity": {
+            "ac": "Armor Class",
+            "bc": "Brain Class",
+            "wc": "Weird Class",
+            "gb": "Guard Bonus",
+            "pb": "Parry Bonus",
+            "speed": "Speed",
+            "weaponsize": "Weapon Size",
+            "initiative": "Initiative",
+            "critrange": "Crit Range",
+            "hitdie": "Hit Die",
+            "hitpoints": "Hit Points",
+            "vulnerabilities": "Vulnerabilities",
+            "resistances": "Resistances",
+            "name": "Name",
+            "race": "Race",
+            "class": "Class",
+            "job": "Job"
             
         },
         "attack": {
