@@ -27,5 +27,5 @@ Hooks.once("init", function(){
     Actors.unregisterSheet("core", ActorSheet);
     Actors.registerSheet("strangetidings", StrangeTidingsEntitySheet, { makeDefault: true });
     
-    preloadHandlebarsTemplates();
+    preloadHandlebarTemplates();
 });
