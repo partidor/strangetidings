@@ -4,15 +4,15 @@ import StrangeTidingsEntitySheet from "./module/sheets/strangetidings-entity-she
 
 async function preloadHandlebarTemplates() {
     const templatePaths = [
-        "systems/strangetidings/templates/partials/character-info-box.html",
-        "systems/strangetidings/templates/partials/character-class-box.html",
-        "systems/strangetidings/templates/partials/character-stats-box.html",
-        "systems/strangetidings/templates/partials/character-skills-box.html",
-        "systems/strangetidings/templates/partials/character-resources-box.html",
-        "systems/strangetidings/templates/partials/character-actions-box.html",
-        "systems/strangetidings/templates/partials/character-spells-box.html",
-        "systems/strangetidings/templates/partials/character-boons-box.html",
-        "systems/strangetidings/templates/partials/character-inventory-box.html",
+        "./templates/partials/character-info-box.html",
+        "./templates/partials/character-class-box.html",
+        "./templates/partials/character-stats-box.html",
+        "./templates/partials/character-skills-box.html",
+        "./templates/partials/character-resources-box.html",
+        "./templates/partials/character-actions-box.html",
+        "./templates/partials/character-spells-box.html",
+        "./templates/partials/character-boons-box.html",
+        "./templates/partials/character-inventory-box.html",
     ];
 };
 
