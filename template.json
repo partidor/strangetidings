@@ -166,6 +166,9 @@
       "customization": {
         "name": "none"
       },
+      "material": {
+        "name": "none"
+      },
       "vulnerabilities": ["none"],
       "resistances": ["none"],
       "size": {
@@ -197,10 +200,11 @@
       "templates": ["base", "modifier"]
     },
     "armor": {
-      "templates": ["base", "modifier"]
+      "templates": ["base", "modifier", "material"]
     },
     "weapon": {
-      "templates": ["base", "modifier", "size", "damage", "customization"]
+      "templates": ["base", "modifier", "size", "damage", "customization", "material"],
+      "range": "melee"
     }
   }
 }

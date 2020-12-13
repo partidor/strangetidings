@@ -25,7 +25,40 @@
                 "damagebonus": "Damage Bonus",
                 "damagetype": "Damage Type",
                 "customization": "Customization",
+                "material": "Material",
                 "size": "Size"
+            },
+            "material": {
+                "wood": "Wood",
+                "steel": "Steel",
+                "leather": "Leather",
+                "vestment": "Vestment",
+                "bronze": "Bronze",
+                "iron": "Iron",
+                "silver": "Silver",
+                "crystal": "Crystal",
+                "siderite": "Siderite"
+            },
+            "customization": {
+                "reach": "Reach", 
+                "thrown": "Thrown", 
+                "long": "Long", 
+                "serrated": "Serrated", 
+                "stiletto": "Stiletto", 
+                "fluted": "Fluted", 
+                "elementalsheath": "Elemental Sheath", 
+                "complex": "Complex", 
+                "wrist": "Wrist", 
+                "siege": "Siege", 
+                "longfirearm": "Long Firearm", 
+                "shortfirearm": "Short Firearm", 
+                "poison": "Poison"
+            },
+            "size": {
+                "small": "Small",
+                "medium": "Medium",
+                "large": "Large",
+                "great": "Great"
             }
         },
         "actor": {
@@ -36,7 +69,25 @@
             "attackBonus": "Attack Bonus"
         },
         "misc": {
-
+            "damagetype": {
+                "piercing": "Piercing",        
+                "slashing": "Slashing",        
+                "blunt": "Blunt",        
+                "fire": "Fire",        
+                "lightning": "Lightning",        
+                "ice": "Ice",        
+                "thunder": "Thunder",        
+                "acid": "Acid",
+                "poison": "Poison",        
+                "radiant": "Radiant",        
+                "necrotic": "Necrotic",        
+                "psychic": "Psychic",        
+                "celestial": "Celestial",        
+                "occult": "Occult",        
+                "ith": "Ith",        
+                "cer": "Cer",        
+                "force": "Force"
+            }
         }
     }
 }

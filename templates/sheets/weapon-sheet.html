@@ -12,11 +12,12 @@
                 <th>{{localize "stlang.item.weapon.damagebonus"}}</th>
                 <th>{{localize "stlang.item.weapon.damagetype"}}</th>
                 <th>{{localize "stlang.item.weapon.customization"}}</th>
+                <th>{{localize "stlang.item.weapon.material"}}</th>
                 <th>{{localize "stlang.item.weapon.size"}}</th>
             </tr>
             <tr>
                 <td>
-                    <input name="data.modifier.die" type="text" value="{{data.modifier.die}}" data-dtype="Number" />
+                    <input name="data.modifier.die" type="text" value="{{data.modifier.die}}"/>
                 </td>
                 <td>
                     <select name="data.modifier.core">
@@ -28,7 +29,7 @@
                     </select>
                 </td>
                 <td>
-                    <input name="data.damage.die" type="text" value="{{data.damage.die}}" data-dtype="Number" />
+                    <input name="data.damage.die" type="text" value="{{data.damage.die}}" />
                 </td>
                 <td>
                     <select name="data.damage.core">
@@ -40,13 +41,40 @@
                     </select>
                 </td>
                 <td>
-                    <input name="data.damage.type" type="text" value="{{data.damage.type}}" />
+                    <select name="data.damage.type">
+                        {{#select data.damage.type}}
+                        {{#each config.damageTypes as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
                 </td>
                 <td>
-                    <input name="data.customization.name" type="text" value="{{data.customization.name}}" />
+                    <select name="data.customization.name">
+                        {{#select data.customization.name}}
+                        {{#each config.customization as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
                 </td>
                 <td>
-                    <input name="data.size.name" type="text" value="{{data.size.name}}" />
+                    <select name="data.material.name">
+                        {{#select data.material.name}}
+                        {{#each config.materials as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td>
+                    <select name="data.size.name">
+                        {{#select data.size.name}}
+                        {{#each config.sizes as |name type|}}
+                        <option value="{{type}}">{{localize name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
                 </td>
             </tr>
         </table>
