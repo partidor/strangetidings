@@ -1,1 +1,42 @@
-{}
+{
+    "stlang": {
+        "stats": {
+            "brain": "Brain",
+            "brawn": "Brawn", 
+            "grit": "Grit",
+            "guile": "Guile",
+            "weird": "Weird"
+        },
+        "skills": {
+
+        },
+        "item": {
+            "item": {},
+            "armor": {},
+            "boon": {},
+            "forfeit": {},
+            "spell": {},
+            "gadget": {},
+            "action": {},
+            "weapon": {
+                "attackroll": "Attack Roll",
+                "attackbonus": "Attack Bonus",
+                "damageroll": "Damage Roll",
+                "damagebonus": "Damage Bonus",
+                "damagetype": "Damage Type",
+                "customization": "Customization",
+                "size": "Size"
+            }
+        },
+        "actor": {
+            
+        },
+        "attack": {
+            "none": "",
+            "attackBonus": "Attack Bonus"
+        },
+        "misc": {
+
+        }
+    }
+}

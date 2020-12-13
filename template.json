@@ -143,7 +143,7 @@
     }
   },
   "Item": {
-    "types": ["item", "boon", "forfeit", "spell", "gadget", "action", "weapon"],
+    "types": ["item", "armor", "boon", "forfeit", "spell", "gadget", "action", "weapon"],
     "templates": {
       "base": {
         "description": ""
@@ -152,19 +152,25 @@
         "component_dice": []
       },
       "damage": {
-        "type": null,
-        "die": null
+        "core": "attackbonus",
+        "type": "slashing",
+        "die": 0
       },
       "modifier": {
-        "value": 0,
-        "attribute": "none"
+        "core": "attackbonus",
+        "die": 0
       },
       "level": {
         "level": 0
       },
+      "customization": {
+        "name": "none"
+      },
+      "vulnerabilities": ["none"],
+      "resistances": ["none"],
       "size": {
         "slot": "slow",
-        "size": 0,
+        "name": "small",
         "packs": false
       },
       "tier": {
@@ -190,8 +196,11 @@
     "action": {
       "templates": ["base", "modifier"]
     },
+    "armor": {
+      "templates": ["base", "modifier"]
+    },
     "weapon": {
-      "templates": ["base", "modifier", "size", "damage"]
+      "templates": ["base", "modifier", "size", "damage", "customization"]
     }
   }
 }

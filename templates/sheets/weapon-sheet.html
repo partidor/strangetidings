@@ -1,0 +1,55 @@
+<form class="{{cssClass}}" autocomplete="off">
+    <header class="sheet-header">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64"/>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"/></h1>
+    </header>
+    <div>
+        <table>
+            <tr>
+                <th>{{localize "strangetidings.item.weapon.attackroll"}}</th>
+                <th>{{localize "strangetidings.item.weapon.attackbonus"}}</th>
+                <th>{{localize "strangetidings.item.weapon.damageroll"}}</th>
+                <th>{{localize "strangetidings.item.weapon.damagebonus"}}</th>
+                <th>{{localize "strangetidings.item.weapon.damagetype"}}</th>
+                <th>{{localize "strangetidings.item.weapon.customization"}}</th>
+                <th>{{localize "strangetidings.item.weapon.size"}}</th>
+            </tr>
+            <tr>
+                <td>
+                    <input name="data.modifier.die" type="text" value="{{data.modifier.die}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <select name="data.modifier.core">
+                        {{#select data.modifier.core}}
+                        {{#each config.attackTypes as |name type|}}
+                        <option value="{{type}}">{{name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td>
+                    <input name="data.damage.die" type="text" value="{{data.damage.die}}" data-dtype="Number" />
+                </td>
+                <td>
+                    <select name="data.damage.core">
+                        {{#select data.damage.core}}
+                        {{#each config.attackTypes as |name type|}}
+                        <option value="{{type}}">{{name}}</option>
+                        {{/each}}
+                        {{/select}}
+                    </select>
+                </td>
+                <td>
+                    <input name="data.damage.type" type="text" value="{{data.damage.type}}" />
+                </td>
+                <td>
+                    <input name="data.customization.name" type="text" value="{{data.customization.name}}" />
+                </td>
+                <td>
+                    <input name="data.size.name" type="text" value="{{data.size.name}}" />
+                </td>
+            </tr>
+        </table>
+        <textarea name="data.base.description">{{data.base.description}}</textarea>
+    </div>
+</form>
