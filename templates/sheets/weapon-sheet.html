@@ -11,6 +11,7 @@
                 <th>{{localize "stlang.item.weapon.damageroll"}}</th>
                 <th>{{localize "stlang.item.weapon.damagebonus"}}</th>
                 <th>{{localize "stlang.item.weapon.damagetype"}}</th>
+                <th>{{localize "stlang.item.weapon.range"}}</th>
                 <th>{{localize "stlang.item.weapon.customization"}}</th>
                 <th>{{localize "stlang.item.weapon.material"}}</th>
                 <th>{{localize "stlang.item.weapon.size"}}</th>
@@ -48,6 +49,9 @@
                         {{/each}}
                         {{/select}}
                     </select>
+                </td>
+                <td>
+                    <input name="data.range" type="text" value="{{data.range}}" />
                 </td>
                 <td>
                     <select name="data.customization.name">

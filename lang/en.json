@@ -24,6 +24,7 @@
                 "damageroll": "Damage Roll",
                 "damagebonus": "Damage Bonus",
                 "damagetype": "Damage Type",
+                "range": "Range",
                 "customization": "Customization",
                 "material": "Material",
                 "size": "Size"
@@ -40,6 +41,7 @@
                 "siderite": "Siderite"
             },
             "customization": {
+                "none": "None", 
                 "reach": "Reach", 
                 "thrown": "Thrown", 
                 "long": "Long", 
@@ -65,7 +67,7 @@
             
         },
         "attack": {
-            "none": "none",
+            "none": "None",
             "attackBonus": "Attack Bonus"
         },
         "misc": {

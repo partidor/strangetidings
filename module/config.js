@@ -23,6 +23,7 @@ strangetidings.materials = {
 }
 
 strangetidings.customization = {
+	none: "stlang.item.customization.none", 
 	reach: "stlang.item.customization.reach", 
 	thrown: "stlang.item.customization.thrown", 
 	long_: "stlang.item.customization.long", 
@@ -71,6 +72,7 @@ strangetidings.weapon = {
     damageroll: "stlang.item.weapon.damageroll",
     damagebonus: "stlang.item.weapon.damagebonus",
     damagetype: "stlang.item.weapon.damagetype",
+    range: "stlang.item.weapon.range",
     customization: "stlang.item.weapon.customization",
     material: "stlang.item.weapon.material",
     size: "stlang.item.weapon.size"
