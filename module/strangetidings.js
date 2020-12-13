@@ -1,5 +1,5 @@
 import {strangetidings} from "./module/config.js"
-import StrangeTidingsItemSheet from "./sheets/strangetidings-item-sheet.js";
+import StrangeTidingsItemSheet from "./module/sheets/strangetidings-item-sheet.js";
 
 Hooks.once("init", function(){
     console.log("strangetidings - Initializing Strange Tidings System");
