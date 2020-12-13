@@ -7,7 +7,7 @@
   "compatibleCoreVersion": "0.7.6",
   "templateVersion": 2,
   "author": "Joshua Wilkie",
-  "esmodules": ["module/strangetidings.js"],
+  "esmodules": ["strangetidings.js"],
   "styles": [],
   "packs": [],
   "gridDistance": 5,
