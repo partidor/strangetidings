@@ -32,7 +32,7 @@
             
         },
         "attack": {
-            "none": "",
+            "none": "none",
             "attackBonus": "Attack Bonus"
         },
         "misc": {

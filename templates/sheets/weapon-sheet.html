@@ -6,13 +6,13 @@
     <div>
         <table>
             <tr>
-                <th>{{localize "strangetidings.item.weapon.attackroll"}}</th>
-                <th>{{localize "strangetidings.item.weapon.attackbonus"}}</th>
-                <th>{{localize "strangetidings.item.weapon.damageroll"}}</th>
-                <th>{{localize "strangetidings.item.weapon.damagebonus"}}</th>
-                <th>{{localize "strangetidings.item.weapon.damagetype"}}</th>
-                <th>{{localize "strangetidings.item.weapon.customization"}}</th>
-                <th>{{localize "strangetidings.item.weapon.size"}}</th>
+                <th>{{localize "stlang.item.weapon.attackroll"}}</th>
+                <th>{{localize "stlang.item.weapon.attackbonus"}}</th>
+                <th>{{localize "stlang.item.weapon.damageroll"}}</th>
+                <th>{{localize "stlang.item.weapon.damagebonus"}}</th>
+                <th>{{localize "stlang.item.weapon.damagetype"}}</th>
+                <th>{{localize "stlang.item.weapon.customization"}}</th>
+                <th>{{localize "stlang.item.weapon.size"}}</th>
             </tr>
             <tr>
                 <td>
@@ -22,7 +22,7 @@
                     <select name="data.modifier.core">
                         {{#select data.modifier.core}}
                         {{#each config.attackTypes as |name type|}}
-                        <option value="{{type}}">{{name}}</option>
+                        <option value="{{type}}">{{localize name}}</option>
                         {{/each}}
                         {{/select}}
                     </select>
