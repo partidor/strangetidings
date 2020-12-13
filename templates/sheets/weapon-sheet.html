@@ -34,7 +34,7 @@
                     <select name="data.damage.core">
                         {{#select data.damage.core}}
                         {{#each config.attackTypes as |name type|}}
-                        <option value="{{type}}">{{name}}</option>
+                        <option value="{{type}}">{{localize name}}</option>
                         {{/each}}
                         {{/select}}
                     </select>

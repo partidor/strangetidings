@@ -7,5 +7,5 @@ Hooks.once("init", function(){
     CONFIG.strangetidings = strangetidings;
 
     Items.unregisterSheet("core", ItemSheet);
-    Items.registerSheet("strangetidings", StrangeTidingsItemSheet, { madeDefault: true});
+    Items.registerSheet("strangetidings", StrangeTidingsItemSheet, { makeDefault: true });
 });
