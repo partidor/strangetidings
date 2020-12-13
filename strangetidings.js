@@ -2,18 +2,20 @@ import {strangetidings} from "./module/config.js"
 import StrangeTidingsItemSheet from "./module/sheets/strangetidings-item-sheet.js";
 import StrangeTidingsEntitySheet from "./module/sheets/strangetidings-entity-sheet.js";
 
-async function preloadHandlebarTemplates() {
+async function preloadHandlebarsTemplates() {
     const templatePaths = [
-        "./templates/partials/character-info-box.html",
-        "./templates/partials/character-class-box.html",
-        "./templates/partials/character-stats-box.html",
-        "./templates/partials/character-skills-box.html",
-        "./templates/partials/character-resources-box.html",
-        "./templates/partials/character-actions-box.html",
-        "./templates/partials/character-spells-box.html",
-        "./templates/partials/character-boons-box.html",
-        "./templates/partials/character-inventory-box.html",
+        "systems/strangetidings/templates/partials/character-info-box.html",
+        "systems/strangetidings/templates/partials/character-class-box.html",
+        "systems/strangetidings/templates/partials/character-stats-box.html",
+        "systems/strangetidings/templates/partials/character-skills-box.html",
+        "systems/strangetidings/templates/partials/character-resources-box.html",
+        "systems/strangetidings/templates/partials/character-actions-box.html",
+        "systems/strangetidings/templates/partials/character-spells-box.html",
+        "systems/strangetidings/templates/partials/character-boons-box.html",
+        "systems/strangetidings/templates/partials/character-inventory-box.html",
     ];
+
+    return loadTemplates(templatePaths);
 };
 
 Hooks.once("init", function(){
@@ -27,5 +29,5 @@ Hooks.once("init", function(){
     Actors.unregisterSheet("core", ActorSheet);
     Actors.registerSheet("strangetidings", StrangeTidingsEntitySheet, { makeDefault: true });
     
-    preloadHandlebarTemplates();
+    preloadHandlebarsTemplates();
 });
